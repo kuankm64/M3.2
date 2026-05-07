@@ -1,4 +1,6 @@
 terraform {
+  required_version = ">= 1.5.0" # Replace with your current version
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -6,7 +8,6 @@ terraform {
     }
   }
 }
-
 
 provider "aws" {
   region = "ap-southeast-1"
