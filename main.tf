@@ -21,9 +21,9 @@ terraform {
   }
 }
 resource "aws_s3_bucket" "s3_tf" {
-  # checkov:skip=CKV_AWS_62: Event bridge notification is not required
-  # checkov:skip=CKV_AWS_6: Public access block is handled by account-level settings
-  # checkov:skip=CKV_AWS_61: Lifecycle configuration not needed for state files
+  # checkov:skip=CKV2_AWS_62: Event bridge notification is not required
+  # checkov:skip=CKV2_AWS_6: Public access block is handled by account-level settings
+  # checkov:skip=CKV2_AWS_61: Lifecycle configuration not needed for state files
   # checkov:skip=CKV_AWS_144: Cross-region replication not required
   # checkov:skip=CKV_AWS_21: Logging is not required for this bucket
   # checkov:skip=CKV_AWS_145: Encryption is handled by default S3 encryption
